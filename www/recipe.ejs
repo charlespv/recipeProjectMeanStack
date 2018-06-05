@@ -1,0 +1,14 @@
+<% include partials/header %>
+<!-- On vient afficher le contenu du tableau qui nous est retourné depuis l'API-->
+<article>     
+        <h2><%= data[0].title %></h2>   
+        <h3><%= data[0].type %></h3> 
+        <h3>Ingrédients :</h3>
+        <p><%= data[0].ingredient %></p> 
+        <h3>Description :</h3>
+        <p><%= data[0].content %></p>
+</article>
+
+<a class="button" href="/">Accueil</a>
+
+<% include partials/footer %>

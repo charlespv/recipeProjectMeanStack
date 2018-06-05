@@ -1,0 +1,20 @@
+<% include partials/header %>
+
+<h2>Ajoutez un recette</h2>  
+
+<form action="/api/add-recipe/" method="POST">
+    <label for="title">Titre:</label>
+        <textarea name="title"></textarea>
+    <label for="ingredient">Ingredients:</label>
+        <textarea name="ingredient"></textarea>
+    <label for="content">Description:</label>
+        <textarea name="content"></textarea>
+        <select name="type">
+    <option value="ENTREE">Entrée</option>
+    <option value="PLAT">Plat</option>
+    <option value="DESSERT">Dessert</option>
+    </select>   
+    <button type="submit">Ajouter</button>
+</form>
+
+<% include partials/footer %>

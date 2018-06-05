@@ -1,0 +1,17 @@
+<% include partials/header %>
+    <!-- Présentation des donnée de la collection recipes à l'aide d'une boucle for -->
+    <% for(let item of data){%>
+        <article>
+            <h2><%=item.title%></h2>
+            <p><%= item.type %></p>
+            <a class="button button-outline" href="/recipe/<%=item._id%> ">Afficher la recette</a>
+        </article>
+        <!-- On récupère l'id de l'élement de la collection à chaque iteration de boucle-->
+        <form action="/api/suppr-posts/<%=item._id %>" method="POST">
+            <button class="button-outline" type="submit">supprimer</button>  
+        </form>  
+        
+    <% } %>
+    <a class="button" href="add-recipe">Ajouter</a>
+
+<% include partials/footer %>
