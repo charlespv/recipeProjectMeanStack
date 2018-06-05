@@ -7,6 +7,7 @@ Le serveur Node est sur le port 8000
 Le serveur MongoDB est sur le port 27017
 
 
+*
 ## Recettage
 Un bilan de ce que je n'ai pas pu réaliser par rapport aux specs.
 
@@ -26,3 +27,4 @@ Par ailleurs, je n'ai pas réussi à faire à demander la confirmation à l'util
 ### Ajouter une recette
 Je n'ai pas eu le temps de faire la vérification des champs dans le formulaire.
 Après validation, on revient sur la page accueil.
+*
